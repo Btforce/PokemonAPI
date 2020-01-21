@@ -7,10 +7,11 @@ import retrofit2.http.Path;
 
 public interface PokemonInterface {
 
-    String Base_URL = "https://pokeapi.co/api/v2/";
+    String Base_URL = "https://pokeapi.co/api/v2/pokemon/";
 
 
-    @GET("breed/{pokemon}/images/random")
-    Call<Pokemon> getRandomImageByBreed(@Path("pokemon") String pokemon);
+
+    @GET("{number}/")
+    Call<Pokemon> getRandomPokemon(@Path("number") String number);
 
 }
