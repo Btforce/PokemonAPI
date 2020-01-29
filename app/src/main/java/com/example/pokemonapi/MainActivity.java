@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 //check if the body isn't null
                 if (foundPokemon != null) {
 
-                    Toast.makeText(MainActivity.this, foundPokemon.getName(), Toast.LENGTH_SHORT).show();
+                    
 
                     pokemonTextView.setText("Name: " + foundPokemon.getName() + "\n" +
                         "Height: " + foundPokemon.getHeight() + "\n" +
